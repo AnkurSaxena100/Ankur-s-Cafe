@@ -97,7 +97,8 @@ body {
 }
 
 .btn:hover {
-  background-color: #393e13;
+  background-color: white;
+  color: black;
 }
 
 /* Container styles */
@@ -230,26 +231,6 @@ textarea {
   padding: 10px;
 }
 /* Social Icons Styling */
-.social-icons {
-  text-align: center; /* Center the icons */
-}
-
-.social-icons a {
-  color: white; /* White color for the icons */
-  font-size: 20px; /* Smaller font size for icons */
-  text-decoration: none; /* Remove underline */
-  margin: 0 10px; /* Spacing between icons */
-  display: inline-block; /* Inline display */
-  margin: 20px 12px;
-}
-
-.social-icons a:hover {
-  color: #ff6700; /* Color on hover */
-}
-
-.social-icons i {
-  margin-right: 5px; /* Space between icon and text */
-}
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
