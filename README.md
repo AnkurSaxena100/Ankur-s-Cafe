@@ -58,7 +58,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Contact
 If you have any questions or suggestions, feel free to contact us:
-
-Email: contact@ankurscafe.com
 GitHub: AnkurSaxena100
 Thank you for visiting Ankur's Cafe Website repository! We hope you enjoy exploring the site.
