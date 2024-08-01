@@ -1,0 +1,260 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("https://images.pexels.com/photos/287975/pexels-photo-287975.jpeg?auto=compress&cs=tinysrgb&w=600")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 0;
+  position: relative;
+}
+
+.left {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.left img {
+  width: 100px;
+  height: auto;
+}
+
+.tag {
+  display: block;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.mid {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar li a:hover {
+  background: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.right {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn {
+  background-color: #ff6700;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #393e13;
+}
+
+/* Main content styles */
+.order-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-content h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.order-content form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.order-content form input[type="text"],
+.order-content form input[type="email"],
+.order-content form input[type="tel"],
+.order-content form input[type="datetime-local"],
+.order-content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.order-content form input[type="submit"] {
+  background-color: #ff6700;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.order-content form input[type="submit"]:hover {
+  background-color: #393e13;
+}
+
+/* Footer styles */
+.footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1%;
+}
+
+.footer-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #ff6700;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .left,
+  .mid,
+  .right {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .navbar {
+    margin: 10px 0;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .right {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .order-content {
+    padding: 15px;
+  }
+
+  .order-content h1,
+  .order-content h2 {
+    font-size: 1.5em;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Web Page</title>
+  <link rel="stylesheet" href="/CSS/index.css" />
+  <script src="https://kit.fontawesome.com/3086f6e9c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="left">
+      <img src="/IMAGES/logo (3).png" alt="" />
+      <div class="tag">Ankur's Cafe</div>
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <button class="btn"><a href="ordernow.html">Order Now</button></a>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join the Best Café of Rampur</h1>
+    <form action="/submit-form" method="post">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required placeholder="Enter Your Name" /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required placeholder="Enter Your Email" /><br /><br />
+
+      <label for="phone">Phone Number:</label><br />
+      <input type="tel" id="phone" name="phone" required placeholder="Enter Your Phone No" /><br /><br />
+
+      <label for="gender">Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
+
+      <label for="visit-time">Preferred Visiting Time:</label><br />
+      <select id="visit-time" name="visit-time" required>
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="evening">Evening</option>
+        <option value="night">Night</option>
+      </select><br /><br />
+
+      <label for="visit-date">Preferred Visit Date:</label><br />
+      <input type="date" id="visit-date" name="visit-date" required /><br /><br />
+
+      <label for="visit-datetime">Preferred Visit Date & Time:</label><br />
+      <input type="datetime-local" id="visit-datetime" name="visit-datetime" required /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br /><br />
+
+      <input type="submit" value="Join Us" />
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>About Us</h2>
+        <p>
+          We are a cozy café located in the heart of Rampur, offering the best
+          coffee and pastries in town. Join us for a relaxing experience and
+          enjoy our carefully curated menu.
+        </p>
+      </div>
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+          <a href="facebook.com"><i class="fa-brands fa-facebook"></i>Facebook</a>
+          <a href="twitter.com"><i class="fa-brands fa-twitter"></i>Twitter</a>
+          <a href="instagram.com"><i class="fa-brands fa-instagram"></i>Instagram</a>
+          <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+        </div>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@ankur'scafe.com</p>
+        <p>Phone: +91-123-456-7890</p>
+        <p>Address: 123 Rampur Street, Rampur, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Ankur's Café. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>
